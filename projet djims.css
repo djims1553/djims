@@ -1,0 +1,138 @@
+
+header{
+    text-align:center;
+
+    background-image: url(cd.jpg);
+
+animation: gradientAnimation 15s ease infinite alternate;
+
+}
+a{
+    text-align: center;
+    width: 200px;
+    height: 100px;
+
+}
+h1{
+    border: rgb(20, 14, 14) solid 10px;
+    background-image: url(ht.webp);
+border-radius: 15% 20%;
+box-shadow: 15px 0px 0px 4px rgb(30, 35, 32);
+background:linear-gradient(135deg, #6daa93,red,#3d0cba #e68c07);
+animation: colorchange 5s infinite alternate;
+text-align: center;
+
+}
+
+@keyframes colorchange {
+    0%{color: #3d0cba;}
+    15%{color: #6daa93;}
+    30%{color: #e68c07;}
+    45%{color: antiquewhite;}
+    60%{color: aqua;}
+    75%{color: chartreuse;}
+    90%{color: yellow;}
+    100%{color: tomato;}
+}
+h2{
+    
+}
+form{
+    text-align: end;
+    border: brown 1px solid;
+}
+section{
+    animation: gradientAnimation 15s ease infinite;
+    background-size: 400% 400%;
+    background-image: url();
+
+    background:linear-gradient(135deg, #6daa93,red,#3d0cba #e68c07);
+    
+
+}
+
+
+@keyframes gradientAnimation {
+    
+
+    0%{background-position: 0% 50%;}
+    50%{ background-position: 100% 50%;}
+    100%{background-position: 0% 50% ;}
+}
+
+    
+
+img{
+    animation: jump 0.5s ease-in-out infinite;
+    border: #0e0b08 solid 5px;
+     margin: 16px;
+     padding: 10px;
+}
+@keyframes  {
+    0%, 100%{transform: translate(0);}
+    50%{transform: translate(-20px);}
+
+}
+/*effet de vitesse et ces un speed-effect*/
+h2{
+animation: dash 0.1s ease-out infinite;
+}
+@keyframes {
+    0%{transform: translateX(0);
+        opacity: 1;
+    }
+    50%{transform: translateX(50px);
+        opacity: 0.8;
+    }
+    100%{transform: translateX(100px);
+        opacity: 0;
+    }
+}
+/*pour un clignotement dramatique ces un blinking-text*/
+P{
+    font-size:large;
+color: #3d0cba;
+animation: blink 5s infinite;
+}
+@keyframes  {
+    0%,100%{opacity: 2;}
+    50%{opacity: 0;}
+}
+div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:50vh ; 
+    text-align: end;
+
+}
+img{
+    max-width: 100%;
+    height: 300px;
+    width: 400px;
+    animation: gradientAnimation 5s ease infinite alternate;
+    background-image: url(tp.jpg);
+}
+h2{
+    background-image: url(tp.jpg);
+    border: 15px solid black;
+    margin: 50px;
+    padding: 10px;
+    background-color: aqua;
+    text-align: center;
+}
+
+
+body{
+    background-image: url(ht.webp);
+    animation: gradientAnimation 3s ease infinite alternate;
+}
+button {
+    background: linear-gradient(45deg, #ff6b6b, #f06595);
+    border: none;
+    padding: 10px 20px;
+    border-radius: 12px 20px 14px 30px;
+    color: white;
+    cursor: pointer;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
