@@ -1,138 +1,140 @@
-
-header{
-    text-align:center;
-
-    background-image: url(cd.jpg);
-
-animation: gradientAnimation 15s ease infinite alternate;
-
+/* === BASE === */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #f0f2f5;
+  color: #222;
+  line-height: 1.7;
 }
-a{
+
+/* === HEADER === */
+header {
+  background-color: #002b5c;
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: wrap;
+}
+
+.nav-bar a {
+  color: #fff;
+  font-weight: 600;
+  text-decoration: none;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-bar a:hover {
+  color: #00bfff;
+}
+
+/* === MAIN === */
+main {
+  padding: 40px 20px;
+}
+
+section {
+  background-color: #fff;
+  margin: 20px auto;
+  padding: 40px 30px;
+  border-radius: 12px;
+  box-shadow: 0 0 12px rgba(0,0,0,0.05);
+  max-width: 1000px;
+}
+
+/* === TITRES === */
+h1, h2, h3 {
+  color: #002b5c;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.slogan {
+  font-size: 18px;
+  font-weight: 500;
+  color: #00aaff;
+  margin-bottom: 25px;
+}
+
+.centered {
+  text-align: center;
+  font-style: italic;
+  color: #555;
+}
+
+/* === IMAGES & VIDÉOS === */
+img, video {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin-top: 15px;
+}
+
+/* === BOUTONS === */
+.btn, button {
+  background-color: #00aaff;
+  color: white;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  margin-top: 15px;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover, button:hover {
+  background-color: #0088cc;
+}
+
+/* === SERVICES === */
+.service-card {
+  margin-top: 30px;
+  padding-top: 20px;
+  border-top: 2px solid #00aaff;
+}
+
+/* === FORMULAIRE DE CONTACT === */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-top: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 12px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  resize: vertical;
+}
+
+/* === RESPONSIVE DESIGN === */
+@media (max-width: 768px) {
+  .nav-bar {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  section {
+    padding: 30px 20px;
+  }
+
+  .btn, button {
+    width: 100%;
     text-align: center;
-    width: 200px;
-    height: 100px;
-
-}
-h1{
-    border: rgb(20, 14, 14) solid 10px;
-    background-image: url(ht.webp);
-border-radius: 15% 20%;
-box-shadow: 15px 0px 0px 4px rgb(30, 35, 32);
-background:linear-gradient(135deg, #6daa93,red,#3d0cba #e68c07);
-animation: colorchange 5s infinite alternate;
-text-align: center;
-
-}
-
-@keyframes colorchange {
-    0%{color: #3d0cba;}
-    15%{color: #6daa93;}
-    30%{color: #e68c07;}
-    45%{color: antiquewhite;}
-    60%{color: aqua;}
-    75%{color: chartreuse;}
-    90%{color: yellow;}
-    100%{color: tomato;}
-}
-h2{
-    
-}
-form{
-    text-align: end;
-    border: brown 1px solid;
-}
-section{
-    animation: gradientAnimation 15s ease infinite;
-    background-size: 400% 400%;
-    background-image: url();
-
-    background:linear-gradient(135deg, #6daa93,red,#3d0cba #e68c07);
-    
-
-}
-
-
-@keyframes gradientAnimation {
-    
-
-    0%{background-position: 0% 50%;}
-    50%{ background-position: 100% 50%;}
-    100%{background-position: 0% 50% ;}
-}
-
-    
-
-img{
-    animation: jump 0.5s ease-in-out infinite;
-    border: #0e0b08 solid 5px;
-     margin: 16px;
-     padding: 10px;
-}
-@keyframes  {
-    0%, 100%{transform: translate(0);}
-    50%{transform: translate(-20px);}
-
-}
-/*effet de vitesse et ces un speed-effect*/
-h2{
-animation: dash 0.1s ease-out infinite;
-}
-@keyframes {
-    0%{transform: translateX(0);
-        opacity: 1;
-    }
-    50%{transform: translateX(50px);
-        opacity: 0.8;
-    }
-    100%{transform: translateX(100px);
-        opacity: 0;
-    }
-}
-/*pour un clignotement dramatique ces un blinking-text*/
-P{
-    font-size:large;
-color: #3d0cba;
-animation: blink 5s infinite;
-}
-@keyframes  {
-    0%,100%{opacity: 2;}
-    50%{opacity: 0;}
-}
-div{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height:50vh ; 
-    text-align: end;
-
-}
-img{
-    max-width: 100%;
-    height: 300px;
-    width: 400px;
-    animation: gradientAnimation 5s ease infinite alternate;
-    background-image: url(tp.jpg);
-}
-h2{
-    background-image: url(tp.jpg);
-    border: 15px solid black;
-    margin: 50px;
-    padding: 10px;
-    background-color: aqua;
-    text-align: center;
-}
-
-
-body{
-    background-image: url(ht.webp);
-    animation: gradientAnimation 3s ease infinite alternate;
-}
-button {
-    background: linear-gradient(45deg, #ff6b6b, #f06595);
-    border: none;
-    padding: 10px 20px;
-    border-radius: 12px 20px 14px 30px;
-    color: white;
-    cursor: pointer;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
 }
