@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>DJIMS TECHNOLOGIE - Le futur de la maison connectée</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet" />
+  <script src="main.js" defer></script>
+  <script defer>
+    // Fonction simple pour changer le texte du titre (exemple)
+    function changerTexte() {
+      document.getElementById("titre").innerText =
+        "L'avenir de la maison connectée : Djims Technologie vous présente l'innovation.";
+    }
+  </script>
+</head>
+<body>
+
+<header>
+  <nav class="nav-bar-right" aria-label="Menu principal">
+    <button
+      id="menuToggle"
+      class="menu-toggle"
+      aria-expanded="false"
+      aria-controls="menu"
+      aria-haspopup="true"
+    >
+      ☰ Menu
+    </button>
+
+    <ul id="menu" class="menu" role="menu" aria-hidden="true">
+      <li role="none"><a role="menuitem" href="#home" tabindex="-1">Accueil</a></li>
+      <li role="none"><a role="menuitem" href="#service" tabindex="-1">Services</a></li>
+      <li role="none"><a role="menuitem" href="#about" tabindex="-1">À propos</a></li>
+      <li role="none"><a role="menuitem" href="#Blog" tabindex="-1">Blog</a></li>
+      <li role="none"><a role="menuitem" href="#contact" tabindex="-1">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="home" tabindex="-1" aria-label="Accueil">
+    <h1 id="titre" tabindex="0">DJIMS TECHNOLOGIE - L'AVENIR DE LA MAISON CONNECTÉE</h1>
+
+    <div class="grid-container">
+      <article class="card" role="region" aria-labelledby="slogan-home">
+        <p id="slogan-home" class="slogan">
+          Simplifiez votre quotidien avec des solutions domotiques et de vidéosurveillance innovantes.
+        </p>
+        <a href="#service" class="btn" role="button" aria-label="Voir les services de domotique">Domotique</a>
+        <p>Bienvenue chez Djims Technologie, votre partenaire de confiance pour une vie moderne et connectée...</p>
+        <img src="cd.jpg" alt="Maison connectée" />
+      </article>
+    </div>
+  </section>
+
+  <section id="about" tabindex="-1" aria-label="À propos de Djims Technologie">
+    <h2>À propos de Djims Technologie</h2>
+    <div class="grid-container">
+      <article class="card" role="region" aria-labelledby="mission">
+        <h6 id="mission" class="centered">Notre mission : rendre votre maison intelligente</h6>
+        <p>Chez Djims Technologie, nous croyons que la technologie doit être au service des personnes...</p>
+        <img src="ht.webp" alt="Maison intelligente" />
+      </article>
+    </div>
+  </section>
+
+  <section id="service" tabindex="-1" aria-label="Nos services">
+    <h2>NOS SERVICES</h2>
+    <div class="grid-container">
+      <article class="card" role="region" aria-labelledby="domotique-title">
+        <h3 id="domotique-title">Domotique</h3>
+        <p>Automatisation des éclairages, température, volets et serrures intelligentes.</p>
+        <img src="v.webp" alt="Domotique" />
+        <p>Automatisez votre maison avec Djims Technologie...</p>
+      </article>
+
+      <article class="card" role="region" aria-labelledby="programmation-title">
+        <h3 id="programmation-title">Programmation sur mesure</h3>
+        <img src="u.webp" alt="Logiciels personnalisés pour la domotique et la sécurité" />
+        <video src="tz.mp4" controls loop autoplay width="100%" poster="b.jpg" aria-label="Vidéo de programmation sur mesure"></video>
+        <p>Développement des logiciels personnalisés pour la domotique et la sécurité, la gestion, les PME etc...</p>
+      </article>
+
+      <article class="card" role="region" aria-labelledby="videosurveillance-title">
+        <h3 id="videosurveillance-title">Vidéosurveillance</h3>
+        <p>Installation de caméras HD, visionnage à distance et alertes en temps réel.</p>
+        <img src="tp.jpg" alt="Sécurité" />
+        <video src="vid.mp4" controls loop autoplay width="100%" poster="tu.webp" aria-label="Vidéo de vidéosurveillance"></video>
+        <p>Chez Djims Technologie, nous garantissons votre sécurité grâce à notre expertise.</p>
+      </article>
+
+      <article class="card" role="region" aria-labelledby="chamberline-title">
+        <h3 id="chamberline-title">Chamberline l’assistant vocal personnalisé</h3>
+        <img src="warren.png" alt="Assistant vocal Chamberline" />
+        <p>
+          Chamberline n’est pas seulement un assistant vocal, c’est votre compagnon intelligent qui transforme chaque interaction en une expérience fluide, personnalisée et proactive. Avec elle, la technologie devient un véritable partenaire au service de votre quotidien, simplifiant vos tâches, anticipant vos besoins et libérant votre créativité.
+        </p>
+      </article>
+    </div>
+  </section>
+
+  <section id="Blog" tabindex="-1" aria-label="Blog Djims Technologie">
+    <article class="article" role="article">
+      <h1>Djims Technologie : L’intelligence au service de votre quotidien</h1>
+
+      <p><strong>Introduction:</strong></p>
+      <p>
+        Chez Djims Technologie, nous croyons en un monde où la technologie facilite la vie, sécurise les foyers et propulse les entreprises vers l’excellence. Grâce à nos solutions innovantes, la maison, le bureau et les PME entrent dans une nouvelle ère : celle de l’autonomie intelligente.
+      </p>
+
+      <h2>Sécurité & Domotique connectée</h2>
+      <p>
+        Nos systèmes transforment votre maison en une forteresse numérique. Caméras WiFi, alarmes connectées, contrôle à distance via mobile ou assistant vocal – la technologie veille pour vous.
+      </p>
+
+      <h2>Chamberline, l’assistant qui comprend et anticipe</h2>
+      <p>
+        Développé avec soin, <em>Chamberline</em> est votre majordome digital. Il écoute, exécute, apprend vos habitudes et interagit avec vos objets connectés. Plus qu’un assistant, c’est un véritable cerveau domotique.
+      </p>
+
+      <h2>Des solutions sur-mesure pour les PME</h2>
+      <p>
+        Nous accompagnons les entreprises dans leur transformation numérique avec des outils de gestion intelligente : CRM, gestion RH automatisée, finance prédictive, tout cela dans une interface sécurisée.
+      </p>
+
+      <h2>Innovation continue avec l’IA et la blockchain</h2>
+      <p>
+        Nous intégrons l’intelligence artificielle pour optimiser chaque tâche, et la blockchain pour sécuriser les données. Nos solutions ne sont pas seulement performantes : elles sont fiables, évolutives et prêtes pour l’avenir.
+      </p>
+
+      <h3>Conclusion :</h3>
+      <p>
+        Chez Djims Technologie, nous ne créons pas simplement des outils. Nous construisons un écosystème technologique intelligent, pensé pour votre confort, votre sécurité et votre croissance.
+      </p>
+    </article>
+  </section>
+
+  <section id="contact" tabindex="-1" aria-label="Contactez-nous">
+    <h2>Contactez-nous</h2>
+    <form
+      action="https://formsubmit.co/djimsbrice238@gmail.com"
+      method="POST"
+      class="formulaire-contact"
+      aria-describedby="form-instructions"
+      novalidate
+    >
+      <input type="hidden" name="_captcha" value="false" />
+
+      <p id="form-instructions" class="sr-only">
+        Veuillez remplir les champs suivants pour nous contacter.
+      </p>
+
+      <label for="name">Nom</label>
+      <input type="text" id="name" name="nom" required autocomplete="family-name" />
+
+      <label for="prenom">Prénom</label>
+      <input type="text" id="prenom" name="prenom" required autocomplete="given-name" />
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="Email" required autocomplete="email" />
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" required rows="4"></textarea>
+
+      <button type="submit" class="btn" aria-label="Envoyer le formulaire de contact">
+        Valider
+      </button>
+    </form>
+  </section>
+</main>
+
+<div style="text-align:center; margin:20px 0;">
+  <button class="btn" onclick="lireTexte('titre')" aria-label="Lire le titre">
+    Lire le titre
+  </button>
+  <button class="btn" onclick="lireTout()" aria-label="Lire toute la page">
+    Lire toute la page
+  </button>
+</div>
+
+</body>
+</html>
